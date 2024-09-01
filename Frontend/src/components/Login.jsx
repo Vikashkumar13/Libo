@@ -9,7 +9,7 @@ function Login() {
   const onSubmit = async (data) => {
 
     const userInfo = { email: data.email, password: data.password };
-    
+
     await axios.post("http://localhost:8000/user/login", userInfo).then((res) => {
       if (res.data) {
         toast.success("Loggedin Successfully");
