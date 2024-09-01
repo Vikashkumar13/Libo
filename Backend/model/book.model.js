@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//BOOK SCHEMA
 const bookSchema = mongoose.Schema({
     name: {
         type: String,
